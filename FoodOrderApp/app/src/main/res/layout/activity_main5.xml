@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="william1099.com.foodorder.Main5Activity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Isi Data Berikut Untuk Melakukan Pemesanan"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#000"
+        android:background="#f1c40f"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:layout_margin="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                android:id="@+id/nama"
+                android:textSize="13sp"
+                android:text="William"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesanan"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Menu Makanan"
+                android:textSize="13sp"
+                android:id="@+id/food"
+                android:text="Ayam Penyet"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:hint="Masukkan keterangan tambahan"
+                android:textSize="13sp"
+                android:id="@+id/desc"
+                android:gravity="start"
+                android:backgroundTint="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah"
+                        android:textColor="#000"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:hint="1"
+                        android:id="@+id/jumlah"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="13sp"
+                        android:text="1"
+                        android:inputType="number"
+                        android:backgroundTint="@color/colorPrimary"/>
+                </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Harga"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/price"
+                android:text="Rp 20.000"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="end"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/pesan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ic_album_overflow_height"
+                android:onClick="send"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorPrimary"
+                android:text="Lakukan Pemesanan"
+                android:textColor="#ffffff" />
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
